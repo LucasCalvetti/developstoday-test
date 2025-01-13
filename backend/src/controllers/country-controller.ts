@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Country, Countries } from "../models/country-model.ts";
+import { Country, Countries } from "../models/country-model.js";
 
 export const fetchAvailableCountries = async (req: Request, res: Response) => {
     try {

@@ -1,5 +1,5 @@
-const BASE_URL_NAGER = "https://date.nager.at/api/v3";
-const BASE_URL_COUNTRIES_NOW = "https://countriesnow.space/api/v0.1/countries";
+const BASE_URL_NAGER = process.env.NAGER_API_URL;
+const BASE_URL_COUNTRIES_NOW = process.env.COUNTRIES_NOW_API_URL;
 
 // Aviable countries
 type AvailableCountriesResponse = {

@@ -1,31 +1,16 @@
 {
-  "name": "developstoday-test",
+  "name": "developstoday-app",
   "version": "1.0.0",
-  "type": "module",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev": "node --no-warnings=ExperimentalWarning --loader ts-node/esm ./src/server.ts",
-    "build": "tsc",
-    "start": "node ./dist/server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.18.0",
-    "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.10.5",
-    "eslint": "^9.18.0",
-    "globals": "^15.14.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.19.1"
+    "install-all": "npm install && npm run install-front && npm run install-back",
+    "install-front": "cd frontend && npm install",
+    "install-back": "cd backend && npm install",
+    "dev:back": "cd backend && npm run dev",
+    "dev:front": "cd frontend && npm run dev",
+    "build:back": "cd backend && npm run build",
+    "build:front": "cd frontend && npm run build",
+    "start:back": "cd backend && npm start",
+    "start:front": "cd frontend && npm start"
   }
 }
