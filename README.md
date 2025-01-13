@@ -46,6 +46,8 @@ To start the backend in development mode:
 npm run dev:back
 ```
 
+OPTIONAL:
+
 To build the backend for production:
 
 ```bash
@@ -67,6 +69,8 @@ To start the frontend in development mode:
 ```bash
 npm run dev:front
 ```
+
+OPTIONAL:
 
 To build the frontend for production:
 
