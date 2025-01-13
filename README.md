@@ -7,14 +7,22 @@ This document explains how to set up and deploy the application.
 -   Ensure you have **Node.js** and **npm** installed on your machine.
 -   Create a .env file both in /frontend and /backend
 
-**Backend must have**: (I am giving them to you because this is a test but the idea of the .env is not to share it anywhere)
+### Backend Environment Variables:
 
+These variables are included here for testing purposes. In production, **never share .env files publicly**.
+
+Backend:
+
+```env
 NAGER_API_URL=https://date.nager.at/api/v3
 COUNTRIES_NOW_API_URL=https://countriesnow.space/api/v0.1/countries
+```
 
-**Frontend must have**:
+Frontend:
 
+```env
 API_URL=http://localhost:3000/api
+```
 
 ---
 
